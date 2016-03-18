@@ -1,0 +1,9 @@
+<acceptance-test-run title="Filter the results" name="FilterTheResults" steps="0" successful="0" failures="0" skipped="0" ignored="0" pending="0" annotated-result="PENDING" result="PENDING" duration="1" timestamp="2016-03-18T02:30:12.062+04:00">
+  <user-story id="com.epam.thycydides.basics.feature.Application.YandexMarket.SelectCategoryTelevisions" name="Select category televisions" path="com.epam.thycydides.basics.feature.Application.YandexMarket">
+    <feature id="com.epam.thycydides.basics.feature.Application.YandexMarket" name="Yandex market"/>
+  </user-story>
+  <tags>
+    <tag name="Yandex market" type="feature"/>
+    <tag name="Select category televisions" type="story"/>
+  </tags>
+</acceptance-test-run>
