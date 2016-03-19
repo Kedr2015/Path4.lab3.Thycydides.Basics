@@ -13,6 +13,26 @@ public class MainPage extends PageObject {
 	public MainPage(WebDriver driver) {
 		super(driver);
 	}
-	@FindBy(css="")
-	private WebElement test;
+
+	// item category Electronics
+	@FindBy(xpath = ".//li/a[text() = 'Электроника']")
+	private WebElement categoryElectronics;
+	// item category Computer
+	@FindBy(xpath = ".//li/a[text() = 'Компьютеры']")
+	private WebElement categoryComputer;
+	//item type Phones
+	@FindBy(xpath = ".//li/div/div/a[text() = 'Мобильные телефоны']")
+	private WebElement typePhones;
+	//selection category Electronics
+	public void selectCategoryElectronics() {
+		categoryElectronics.click();
+	}
+	//selection category Computer
+	public void selectCategoryComputer() {
+		categoryComputer.click();
+	}
+	//selection type Phones
+	public void selectTypePhones() {
+		typePhones.click();
+	}
 }

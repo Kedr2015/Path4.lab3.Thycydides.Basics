@@ -1,32 +1,27 @@
 package com.epam.thycydides.basics.bo;
 
+/**
+ * @author kedr
+ * 
+ *         Business object that contains the data to search
+ */
 public class ProductSearch {
-	private String titleGoods;
-	private String name;
+	private String type;
 	private String category;
-	private int maxPrice;
+	private String maxPrice;
 
-	public ProductSearch(String titleGoods, String name, String category, int maxPrice) {
-		this.titleGoods = titleGoods;
-		this.name = name;
+	public ProductSearch(String name, String category, String maxPrice) {
+		this.type = name;
 		this.category = category;
 		this.maxPrice = maxPrice;
 	}
 
-	public String getTitleGoods() {
-		return titleGoods;
-	}
-
-	public void setTitleGoods(String titleGoods) {
-		this.titleGoods = titleGoods;
-	}
-
 	public String getName() {
-		return name;
+		return type;
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		this.type = name;
 	}
 
 	public String getCategory() {
@@ -37,11 +32,11 @@ public class ProductSearch {
 		this.category = category;
 	}
 
-	public int getMaxPrice() {
+	public String getMaxPrice() {
 		return maxPrice;
 	}
 
-	public void setMaxPrice(int maxPrice) {
+	public void setMaxPrice(String maxPrice) {
 		this.maxPrice = maxPrice;
 	}
 

@@ -7,11 +7,9 @@ public class Application {
 	@Feature
 	public class YandexMarket {
 
-		public class SelectCategoryTelevisions {
+		public class SelectCategory {
 		}
 
-		public class SelectCategoryNotebooks {
-		}
 
 	}
 }

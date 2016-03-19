@@ -1,6 +1,7 @@
 package com.epam.thycydides.basics.steps;
 
 import com.epam.thycydides.basics.bo.ProductSearch;
+import com.epam.thycydides.basics.pages.MainPage;
 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.StepGroup;
@@ -15,14 +16,8 @@ public class MainStep extends ScenarioSteps {
 		super(pages);
 	}
 
-	@Step
-	public void selectCategory(String category) {
-
-	}
-
-	@Step
-	public void selectType(String type) {
-
+	private MainPage onMainPage() {
+		return pages().get(MainPage.class);
 	}
 
 	@Step
@@ -30,9 +25,18 @@ public class MainStep extends ScenarioSteps {
 		return false;
 	}
 
+	// choice of category and type
 	@StepGroup
 	public void doFilter(ProductSearch product) {
-		selectCategory(product.getCategory());
-		selectType(product.getName());
+		switch (product.getCategory()) {
+		case "Электроника":
+			onMainPage().selectCategoryElectronics();
+		case "Компьютеры":
+			onMainPage().selectCategoryComputer();
+		}
+		switch (product.getName()) {
+		case "Мобильные телефоны":
+			onMainPage().selectTypePhones();
+		}
 	}
 }

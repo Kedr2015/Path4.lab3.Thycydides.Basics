@@ -24,6 +24,8 @@ public class BaseSteps extends ScenarioSteps {
 
 	@Step
 	public void navigateTo(String URl) {
-
+		
+		getDriver().manage().window().maximize();
+		getDriver().get("http://market.yandex.ru");
 	}
 }

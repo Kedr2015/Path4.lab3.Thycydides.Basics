@@ -32,10 +32,10 @@
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
                 ['Passing', 0],
-                ['Pending', 1],
+                ['Pending', 0.666667],
                 ['Ignored', 0],
                 ['Failing', 0],
-                ['Errors',  0]
+                ['Errors',  0.333333]
             ]
         ], {
             gridPadding: {top: 0, bottom: 38, left: 0, right: 0},
@@ -64,9 +64,9 @@
             },
             series: [
                 {label: '0% requirements tested successfully' },
-                {label: '100% requirements untested'},
+                {label: '66.7% requirements untested'},
                 {label: '0%} requirements failing'},
-                {label: '0%} requirements with errors'}
+                {label: '33.3%} requirements with errors'}
             ]
         });
         // Results table
@@ -144,7 +144,7 @@
         <li><a href="index.html" >Overall Test Results</a></li>
         <li><a href="capabilities.html" class="current">Requirements</a></li>
     </ul>
-    <span class="date-and-time">Report generated 18-03-2016 02:30</span>
+    <span class="date-and-time">Report generated 20-03-2016 00:57</span>
     <br style="clear:left"/>
 </div>
 
@@ -175,7 +175,7 @@
                 <body>
                     <tr>
                         <td class="summary-leading-column">Acceptance Criteria (tests)</td>
-                        <td>2</td>
+                        <td>3</td>
                         <td>0</td>
                         <td>0</td>
                         <td>2</td>
@@ -206,10 +206,10 @@
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>2</td>
+            <td>3</td>
             <td>0 (0%)</td>
-            <td>0 (0%)</td>
-            <td>2 (100%)</td>
+            <td>1 (33%)</td>
+            <td>2 (67%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
@@ -222,10 +222,10 @@
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>2</td>
+            <td>3</td>
             <td>0 (0%)</td>
-            <td>0 (0%)</td>
-            <td>2 (100%)</td>
+            <td>1 (0%)</td>
+            <td>2 (67%)</td>
             <td>0 (0%)</td>
         </tr>
         </body>
@@ -239,7 +239,7 @@
 
     <div id="test-tabs">
         <ul>
-            <li><a href="#test-tabs-1">Acceptance Tests (2)</a></li>
+            <li><a href="#test-tabs-1">Acceptance Tests (3)</a></li>
         </ul>
         <div id="test_list_tests" class="table">
             <div class="test-results">
@@ -289,6 +289,24 @@
                                 <span style="display:none">0</span>
                             </td>
                             <td class="lightgreentext">0.06</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="c3a1348a82240f3ed0f96f1cae756ca9feea61d22d083e93c87c3651b2ffe651.html" title="Could not instantiate class org.openqa.selenium.firefox.FirefoxDriver">Select category test </a>
+                            </td>
+
+                            <td class="lightgreentext">2</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">52.31</td>
                         </tr>
                     </tbody>
                 </table>
